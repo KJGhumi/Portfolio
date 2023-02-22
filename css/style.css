@@ -94,15 +94,13 @@ section {
 }
 section span.side_text {
   font-size: 100px;
-  color: rgba(180, 172, 172, 0.5);
-  writing-mode: vertical-lr;
+  color: #d3d3d3;
   position: absolute;
-  top: 150px;
+  top: 50%;
   left: 30px;
-  width: 100px;
-  height: 400px;
   font-family: "Caveat";
-  line-height: 1;
+  transform: translate(0, -50%);
+  writing-mode: vertical-lr;
 }
 section div.inner {
   width: 1200px;
@@ -113,16 +111,16 @@ section div.inner {
 section#header {
   height: 100vh;
 }
-section#header h1 {
+section#header div.inner h1 {
   position: absolute;
   top: 100px;
-  left: 0;
+  left: 100px;
 }
-section#header h1 img {
+section#header div.inner h1 img {
   width: 110px;
   height: 55px;
 }
-section#header h2 {
+section#header div.inner h2 {
   font-family: "Caveat";
   font-size: 40px;
   color: #37b0e0;
@@ -131,10 +129,10 @@ section#header h2 {
   width: 170px;
   height: 76px;
   line-height: 76px;
-  left: 40px;
+  left: 100px;
   top: 155px;
 }
-section#header div.txt {
+section#header div.inner div.txt {
   font-size: 40px;
   position: absolute;
   top: 330px;
@@ -145,14 +143,14 @@ section#header div.txt {
   line-height: 1.5;
   transform: translate(-50%, 0);
 }
-section#header div.txt span {
+section#header div.inner div.txt span {
   color: #37b0e0;
   font-weight: bold;
 }
-section#header div.txt span.ls {
+section#header div.inner div.txt span.ls {
   letter-spacing: normal;
 }
-section#header div.txt span.line {
+section#header div.inner div.txt span.line {
   width: 510px;
   height: 3px;
   background-color: #37b0e0;
@@ -160,20 +158,20 @@ section#header div.txt span.line {
   top: 90px;
   right: 0;
 }
-section#header div.txt p.name {
+section#header div.inner div.txt p.name {
   font-size: 60px;
 }
-section#header div.line span {
+section#header div.inner div.line span {
   background-color: #f5f1f1;
   position: absolute;
   bottom: 180px;
 }
-section#header div.line span:nth-of-type(1) {
+section#header div.inner div.line span:nth-of-type(1) {
   width: 1220px;
   height: 3px;
   left: -200px;
 }
-section#header div.line span:nth-of-type(2) {
+section#header div.inner div.line span:nth-of-type(2) {
   width: 440px;
   height: 3px;
   right: -200px;
@@ -182,182 +180,152 @@ section#about {
   height: 100vh;
   background-color: #f5f1f1;
 }
-section#about div.title {
-  letter-spacing: 3px;
+section#about div.inbox {
+  width: 1000px;
+  height: 450px;
   position: absolute;
-  top: 50px;
-  left: 0;
-  width: 1200px;
-  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-section#about div.title h2 {
+section#about div.inbox div.title {
+  letter-spacing: 3px;
+  width: 1000px;
+  height: 80px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #37b0e0;
+}
+section#about div.inbox div.title h2 {
   width: 185px;
   font-size: 30px;
   text-align: left;
+  margin-bottom: 5px;
 }
-section#about div.title h2 span {
+section#about div.inbox div.title h2 span {
   color: #37b0e0;
   font-weight: 700;
 }
-section#about div.title > span {
-  width: 1015px;
-  height: 3px;
-  background-color: #37b0e0;
-  position: absolute;
-  top: 40px;
-  right: 0;
+section#about div.inbox ul {
+  margin-bottom: 50px;
 }
-section#about ul {
-  width: 400px;
-  height: 160px;
-  position: absolute;
-  left: 50px;
-  top: 195px;
-}
-section#about ul li {
+section#about div.inbox ul li {
   list-style: square inside;
   line-height: 2;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
 }
-section#about div.txt {
-  position: absolute;
-  top: 405px;
-  left: 0;
+section#about div.inbox div.txt h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #37b0e0;
+  padding-bottom: 10px;
 }
-section#about div.txt h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+section#about div.inbox div.txt p:nth-of-type(2) {
+  margin-top: 20px;
 }
 section#skills {
   height: 100vh;
   background-color: #f5f1f1;
 }
-section#skills div.title {
-  letter-spacing: 3px;
+section#skills div.inbox {
+  width: 1000px;
   position: absolute;
-  top: 50px;
-  left: 0;
-  width: 1200px;
+  top: 50%;
+  left: 50%;
+  height: 500px;
+  transform: translate(-50%, -50%);
+}
+section#skills div.inbox div.title {
+  letter-spacing: 3px;
+  width: 1000px;
   height: 120px;
 }
-section#skills div.title h2 {
-  width: 185px;
+section#skills div.inbox div.title h2 {
   font-size: 30px;
   text-align: left;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #37b0e0;
 }
-section#skills div.title h2 span {
+section#skills div.inbox div.title h2 span {
   color: #37b0e0;
   font-weight: 700;
 }
-section#skills div.title > span {
-  width: 1015px;
-  height: 3px;
-  background-color: #37b0e0;
+section#skills div.inbox div.contents {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
-  top: 60px;
-  right: 0;
+  bottom: 0;
+  justify-content: space-between;
+  height: 350px;
 }
-section#skills div.contents {
-  width: 1140px;
-  height: 440px;
-  position: absolute;
-  left: 60px;
-  top: 250px;
-}
-section#skills div.contents div {
-  width: 515px;
+section#skills div.inbox div.contents div {
+  width: 480px;
   height: 85px;
   display: flex;
+  justify-content: space-between;
 }
-section#skills div.contents div div.bar {
-  width: 430px;
+section#skills div.inbox div.contents div div.bar {
+  width: 400px;
   height: 85px;
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
-section#skills div.contents div div.bar p {
+section#skills div.inbox div.contents div div.bar p {
   margin-left: 20px;
   font-weight: 600;
+  font-size: 14px;
 }
-section#skills div.contents div div.bar .progress {
-  width: 240px;
-  height: 25px;
+section#skills div.inbox div.contents div div.bar .progress {
+  width: 210px;
+  height: 20px;
   margin: 20px 10px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
   background-color: #d4dcdd;
 }
-section#skills div.contents div div.bar .progress span {
+section#skills div.inbox div.contents div div.bar .progress span {
   width: 0%;
   height: 100%;
   display: block;
-  line-height: 25px;
+  line-height: 20px;
   position: absolute;
   text-align: end;
   padding-right: 5px;
   background-color: #37b0e0;
   transition: 1s;
 }
-section#skills div.contents div.html {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-section#skills div.contents div.html div.bar div.progress span.on {
+section#skills div.inbox div.contents div.html div.bar div.progress span.on {
   width: 90%;
 }
-section#skills div.contents div.css {
-  position: absolute;
-  left: 595px;
-  top: 0;
-}
-section#skills div.contents div.css div.bar div.progress span.on {
+section#skills div.inbox div.contents div.css div.bar div.progress span.on {
   width: 90%;
 }
-section#skills div.contents div.js {
-  position: absolute;
-  left: 0;
-  top: 140px;
-}
-section#skills div.contents div.js div.bar div.progress span.on {
+section#skills div.inbox div.contents div.js div.bar div.progress span.on {
   width: 80%;
 }
-section#skills div.contents div.react {
-  position: absolute;
-  left: 595px;
-  top: 140px;
-}
-section#skills div.contents div.react div.bar div.progress span.on {
+section#skills div.inbox div.contents div.react div.bar div.progress span.on {
   width: 70%;
 }
-section#skills div.contents div.react img {
+section#skills div.inbox div.contents div.react img {
   height: 65px;
   margin: 10px 0;
 }
-section#skills div.contents div.ps {
-  position: absolute;
-  left: 0;
-  top: 280px;
-}
-section#skills div.contents div.ps img {
+section#skills div.inbox div.contents div.ps img {
   height: 65px;
   margin: 10px 0;
 }
-section#skills div.contents div.ps div.bar div.progress span.on {
+section#skills div.inbox div.contents div.ps div.bar div.progress span.on {
   width: 70%;
 }
-section#skills div.contents div.figma {
-  position: absolute;
-  left: 595px;
-  top: 280px;
-}
-section#skills div.contents div.figma div.bar div.progress span.on {
+section#skills div.inbox div.contents div.figma div.bar div.progress span.on {
   width: 70%;
 }
-section#skills div.contents div p {
+section#skills div.inbox div.contents div p {
   width: 100px;
   height: 85px;
   display: flex;
@@ -365,11 +333,11 @@ section#skills div.contents div p {
   align-items: center;
   text-align: center;
 }
-section#skills div.contents div img {
+section#skills div.inbox div.contents div img {
   width: 65px;
   height: 85px;
 }
-section#skills div.contents div span {
+section#skills div.inbox div.contents div span {
   width: 40px;
   height: 85px;
   line-height: 85px;
@@ -378,43 +346,47 @@ section#port1, section#port2, section#port3 {
   height: 100vh;
   background-color: #d4dcdd;
 }
-section#port1 div.inner > div, section#port2 div.inner > div, section#port3 div.inner > div {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  height: 330px;
+section#port1 div.inner div.inbox, section#port2 div.inner div.inbox, section#port3 div.inner div.inbox {
+  width: 1100px;
+  height: 375px;
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-section#port1 div.inner > div img, section#port2 div.inner > div img, section#port3 div.inner > div img {
+section#port1 div.inner div.inbox h2, section#port2 div.inner div.inbox h2, section#port3 div.inner div.inbox h2 {
+  font-size: 24px;
+  font-family: "Caveat";
+  color: #37b0e0;
+  height: 30px;
+  margin-bottom: 15px;
+}
+section#port1 div.inner div.inbox div.main, section#port2 div.inner div.inbox div.main, section#port3 div.inner div.inbox div.main {
+  display: flex;
+  justify-content: space-between;
+}
+section#port1 div.inner div.inbox div.main img, section#port2 div.inner div.inbox div.main img, section#port3 div.inner div.inbox div.main img {
   width: 585px;
   height: 330px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
-section#port1 div.inner > div div.site, section#port2 div.inner > div div.site, section#port3 div.inner > div div.site {
-  width: 430px;
+section#port1 div.inner div.inbox div.main div.site, section#port2 div.inner div.inbox div.main div.site, section#port3 div.inner div.inbox div.main div.site {
+  margin: auto 0;
 }
-section#port1 div.inner > div div.site p, section#port2 div.inner > div div.site p, section#port3 div.inner > div div.site p {
-  font-size: 20px;
-  font-weight: 700;
-  color: #f5f1f1;
-  margin-top: 20px;
-}
-section#port1 div.inner > div div.site h3, section#port2 div.inner > div div.site h3, section#port3 div.inner > div div.site h3 {
+section#port1 div.inner div.inbox div.main div.site h3, section#port2 div.inner div.inbox div.main div.site h3, section#port3 div.inner div.inbox div.main div.site h3 {
   font-size: 28px;
   color: #37b0e0;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
-section#port1 div.inner > div div.site ul, section#port2 div.inner > div div.site ul, section#port3 div.inner > div div.site ul {
-  margin: 20px 0;
+section#port1 div.inner div.inbox div.main div.site ul, section#port2 div.inner div.inbox div.main div.site ul, section#port3 div.inner div.inbox div.main div.site ul {
+  margin-bottom: 20px;
 }
-section#port1 div.inner > div div.site ul li, section#port2 div.inner > div div.site ul li, section#port3 div.inner > div div.site ul li {
+section#port1 div.inner div.inbox div.main div.site ul li, section#port2 div.inner div.inbox div.main div.site ul li, section#port3 div.inner div.inbox div.main div.site ul li {
   list-style: square inside;
-  line-height: 2.5;
+  line-height: 2;
+  font-size: 15px;
 }
-section#port1 div.inner > div div.site a, section#port2 div.inner > div div.site a, section#port3 div.inner > div div.site a {
+section#port1 div.inner div.inbox div.main div.site a, section#port2 div.inner div.inbox div.main div.site a, section#port3 div.inner div.inbox div.main div.site a {
   border: 2px solid #37b0e0;
   color: #37b0e0;
   background-color: #f5f1f1;
@@ -427,7 +399,7 @@ section#port1 div.inner > div div.site a, section#port2 div.inner > div div.site
   transition: 0.5s;
   box-sizing: border-box;
 }
-section#port1 div.inner > div div.site a:hover, section#port2 div.inner > div div.site a:hover, section#port3 div.inner > div div.site a:hover {
+section#port1 div.inner div.inbox div.main div.site a:hover, section#port2 div.inner div.inbox div.main div.site a:hover, section#port3 div.inner div.inbox div.main div.site a:hover {
   background-color: #37b0e0;
   color: #f5f1f1;
   font-size: 18px;
@@ -488,9 +460,6 @@ section#contact div.inner div.contact ul li img {
   height: 25px;
   display: block;
   margin-right: 10px;
-}
-section#contact span.side_text {
-  color: #f5f1f1;
 }
 
 footer {

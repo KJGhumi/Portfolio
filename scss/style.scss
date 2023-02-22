@@ -50,178 +50,177 @@ div.header_wrap, div.about_wrap, div.contact_wrap, div.port_wrap, div.skills_wra
 section {
   width: 100%; position: relative; background-color: $subColor3;
   span.side_text {
-    font-size: 100px; color: rgba($color: #b4acac, $alpha: 0.5); writing-mode: vertical-lr; position: absolute; top: 150px; left: 30px; width: 100px; height: 400px; font-family: 'Caveat'; line-height: 1;
+    font-size: 100px; color: #d3d3d3; position: absolute; top: 50%; left: 30px; font-family: 'Caveat'; transform: translate(0,-50%); writing-mode: vertical-lr;
   }
   div.inner {
     width: 1200px; margin: 0 auto; position: relative; height: 100%;
   }
   &#header {
     height: 100vh; 
-    h1 {
-      position: absolute; top: 100px; left: 0;
-      img {
-        width: 110px; height: 55px;
-      }
-    }
-    h2 {
-      font-family: 'Caveat'; font-size: 40px; color: $mainColor; position: absolute; text-align: center; width: 170px; height: 76px; line-height: 76px; left: 40px; top: 155px;
-    }
-    div.txt {
-      font-size: 40px; position: absolute; top: 330px; left: 50%; letter-spacing: 5px; height: 250px; width: 1000px; line-height: 1.5; transform: translate(-50%, 0);
-      span {
-        color: $mainColor; font-weight: bold;
-        &.ls {
-          letter-spacing: normal;
-        }
-        &.line {
-          width: 510px; height: 3px; background-color: $mainColor; position: absolute; top: 90px; right: 0;
+    div.inner {
+      h1 {
+        position: absolute; top: 100px; left: 100px;
+        img {
+          width: 110px; height: 55px;
         }
       }
-      p.name { font-size: 60px; }
-    }
-    div.line {
-      span {
-        background-color: $subColor2; position: absolute; bottom: 180px;
-        &:nth-of-type(1) {
-          width: 1220px; height: 3px; left: -200px;
+      h2 {
+        font-family: 'Caveat'; font-size: 40px; color: $mainColor; position: absolute; text-align: center; width: 170px; height: 76px; line-height: 76px; left: 100px; top: 155px;
+      }
+      div.txt {
+        font-size: 40px; position: absolute; top: 330px; left: 50%; letter-spacing: 5px; height: 250px; width: 1000px; line-height: 1.5; transform: translate(-50%, 0);
+        span {
+          color: $mainColor; font-weight: bold;
+          &.ls {
+            letter-spacing: normal;
+          }
+          &.line {
+            width: 510px; height: 3px; background-color: $mainColor; position: absolute; top: 90px; right: 0;
+          }
         }
-        &:nth-of-type(2) {
-          width: 440px; height: 3px; right: -200px;
+        p.name { font-size: 60px; }
+      }
+      div.line {
+        span {
+          background-color: $subColor2; position: absolute; bottom: 180px;
+          &:nth-of-type(1) {
+            width: 1220px; height: 3px; left: -200px;
+          }
+          &:nth-of-type(2) {
+            width: 440px; height: 3px; right: -200px;
+          }
         }
       }
     }
   }
   &#about {
     height: 100vh; background-color: $subColor2;
-    div.title {
-      letter-spacing: 3px; position: absolute; top: 50px; left: 0; width: 1200px; height: 80px;
-      h2 {
-        width: 185px; font-size: 30px; text-align: left;
-        span {
-          color: $mainColor; font-weight: 700;
+    div.inbox {
+      width: 1000px; height: 450px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      div.title {
+        letter-spacing: 3px; width: 1000px; height: 80px; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #37b0e0;
+        h2 {
+          width: 185px; font-size: 30px; text-align: left; margin-bottom: 5px;
+          span {
+            color: $mainColor; font-weight: 700;
+          }
         }
       }
-      > span { 
-        width: 1015px; height: 3px; background-color: $mainColor; position: absolute; top: 40px; right: 0;
+      ul { margin-bottom: 50px;
+        li {
+          list-style: square inside; line-height: 2; font-size: 14px; font-weight: 600;
+        }
       }
-    }
-    ul {
-      width: 400px; height: 160px; position: absolute; left: 50px; top: 195px;
-      li {
-        list-style: square inside; line-height: 2; font-size: 18px; font-weight: 600;
-      }
-    }
-    div.txt {
-      position: absolute; top: 405px; left: 0;
-      h2 {
-        font-size: 24px; margin-bottom: 20px;
+      div.txt {
+        h2 {
+          font-size: 20px; margin-bottom: 10px; border-bottom: 2px solid #37b0e0; padding-bottom: 10px;
+        }
+        p{
+          &:nth-of-type(2) {
+            margin-top: 20px;
+          }
+        }
       }
     }
   }
   &#skills {
     height: 100vh; background-color: $subColor2;
-    div.title {
-      letter-spacing: 3px; position: absolute; top: 50px; left: 0; width: 1200px; height: 120px;
-      h2 {
-        width: 185px; font-size: 30px; text-align: left;
-        span {
-          color: $mainColor; font-weight: 700;
+    div.inbox {
+      width: 1000px; position: absolute; top: 50%; left: 50%; height: 500px; transform: translate(-50%, -50%);
+      div.title {
+        letter-spacing: 3px; width: 1000px; height: 120px;
+        h2 {
+          font-size: 30px; text-align: left; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #37b0e0;
+          span {
+            color: $mainColor; font-weight: 700;
+          }
         }
       }
-      > span { 
-        width: 1015px; height: 3px; background-color: $mainColor; position: absolute; top: 60px; right: 0;
-      }
-    }
-    div.contents {
-      width: 1140px; height: 440px; position: absolute; left: 60px; top: 250px;
-      div {
-        width: 515px; height: 85px; display: flex;
-        div.bar {
-          width: 430px; height: 85px; align-items: center; display: flex; justify-content: space-around;
-          p{
-            margin-left: 20px; font-weight: 600;
-          }
-          .progress {
-            width: 240px; height: 25px; margin: 20px 10px; overflow: hidden; position: relative; border-radius: 10px; background-color: $subColor3;
-            span {
-              width: 0%; height: 100%; display: block; line-height: 25px; position: absolute; text-align: end; padding-right: 5px; background-color: $mainColor; transition: 1s;
-            }
-          }
-        }
-        &.html {
-          position: absolute; left: 0; top: 0;
+      div.contents {
+        width: 1000px; display: flex; flex-wrap: wrap; position: absolute; bottom: 0; justify-content: space-between; height: 350px;
+        div {
+          width: 480px; height: 85px; display: flex; justify-content: space-between;
           div.bar {
-            div.progress {
-              span.on {
-                width: 90%;
+            width: 400px; height: 85px; align-items: center; display: flex; justify-content: space-around;
+            p{
+              margin-left: 20px; font-weight: 600; font-size: 14px;
+            }
+            .progress {
+              width: 210px; height: 20px; margin: 20px 10px; overflow: hidden; position: relative; border-radius: 10px; background-color: $subColor3;
+              span {
+                width: 0%; height: 100%; display: block; line-height: 20px; position: absolute; text-align: end; padding-right: 5px; background-color: $mainColor; transition: 1s;
               }
             }
           }
-        }
-        &.css {
-          position: absolute; left: 595px; top: 0;
-          div.bar {
-            div.progress {
-              span.on {
-                width: 90%;
+          &.html {
+            div.bar {
+              div.progress {
+                span.on {
+                  width: 90%;
+                }
               }
             }
           }
-        }
-        &.js {
-          position: absolute; left: 0; top: 140px;
-          div.bar {
-            div.progress {
-              span.on {
-                width: 80%;
+          &.css {
+            div.bar {
+              div.progress {
+                span.on {
+                  width: 90%;
+                }
               }
             }
           }
-        }
-        &.react {
-          position: absolute; left: 595px; top: 140px;
-          div.bar {
-            div.progress {
-              span.on {
-                width: 70%;
+          &.js {
+            div.bar {
+              div.progress {
+                span.on {
+                  width: 80%;
+                }
               }
             }
+          }
+          &.react {
+            div.bar {
+              div.progress {
+                span.on {
+                  width: 70%;
+                }
+              }
+            }
+            img {
+              height: 65px; margin: 10px 0;
+            }
+          }
+          &.ps {
+            img {
+              height: 65px; margin: 10px 0;
+            }
+            div.bar {
+              div.progress {
+                span.on {
+                  width: 70%;
+                }
+              }
+            }
+          }
+          &.figma {
+            div.bar {
+              div.progress {
+                span.on {
+                  width: 70%;
+                }
+              }
+            }
+          }
+          p {
+            width: 100px; height: 85px; display: flex; justify-content: center; align-items: center; text-align: center;
           }
           img {
-            height: 65px; margin: 10px 0;
+            width: 65px; height: 85px;
           }
-        }
-        &.ps {
-          position: absolute; left: 0; top: 280px;
-          img {
-            height: 65px; margin: 10px 0;
+          span {
+            width: 40px; height: 85px; line-height: 85px;
           }
-          div.bar {
-            div.progress {
-              span.on {
-                width: 70%;
-              }
-            }
-          }
-        }
-        &.figma {
-          position: absolute; left: 595px; top: 280px;
-          div.bar {
-            div.progress {
-              span.on {
-                width: 70%;
-              }
-            }
-          }
-        }
-        p {
-          width: 100px; height: 85px; display: flex; justify-content: center; align-items: center; text-align: center;
-        }
-        img {
-          width: 65px; height: 85px;
-        }
-        span {
-          width: 40px; height: 85px; line-height: 85px;
         }
       }
     }
@@ -229,29 +228,32 @@ section {
   &#port1, &#port2, &#port3 {
     height: 100vh; background-color: $subColor3;
     div.inner {
-      > div {
-        display: flex; justify-content: space-between; width: 1200px; height: 330px; position: absolute; top: 50%; left: 0; transform: translate(0, -50%);
-        img{
-          width: 585px; height: 330px; border-radius: 40px;
+      div.inbox {
+        width: 1100px; height: 375px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        h2 {
+          font-size: 24px; font-family: 'Caveat'; color: #37b0e0; height: 30px; margin-bottom: 15px;
         }
-        div.site {
-          width: 430px;
-          p {
-            font-size: 20px; font-weight: 700; color: $subColor2; margin-top: 20px;
+        div.main {
+          display: flex; justify-content: space-between;
+          img{
+            width: 585px; height: 330px; border-radius: 10px;
           }
-          h3 {
-            font-size: 28px; color: $mainColor; margin: 10px 0;
-          }
-          ul {
-            margin: 20px 0;
-            li {
-              list-style: square inside; line-height: 2.5;
+          div.site {
+            margin: auto 0;
+            h3 {
+              font-size: 28px; color: $mainColor; margin-bottom: 20px;
             }
-          }
-          a {
-            border: 2px solid $mainColor; color: $mainColor; background-color: $subColor2; width: 200px; height: 55px; display: block; text-align: center; border-radius: 20px; line-height: 55px; transition: .5s; box-sizing: border-box;
-            &:hover {
-              background-color: $mainColor; color: $subColor2; font-size: 18px; font-weight: bold;
+            ul {
+              margin-bottom: 20px;
+              li {
+                list-style: square inside; line-height: 2; font-size: 15px;
+              }
+            }
+            a {
+              border: 2px solid $mainColor; color: $mainColor; background-color: $subColor2; width: 200px; height: 55px; display: block; text-align: center; border-radius: 20px; line-height: 55px; transition: .5s; box-sizing: border-box;
+              &:hover {
+                background-color: $mainColor; color: $subColor2; font-size: 18px; font-weight: bold;
+              }
             }
           }
         }
@@ -285,9 +287,6 @@ section {
           }
         }
       }
-    }
-    span.side_text {
-      color: $subColor2; 
     }
   }
 }
