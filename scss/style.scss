@@ -116,6 +116,7 @@ section {
           font-size: 20px; margin-bottom: 10px; border-bottom: 2px solid #37b0e0; padding-bottom: 10px;
         }
         p{
+          line-height: 1.6;
           &:nth-of-type(2) {
             margin-top: 20px;
           }
@@ -139,14 +140,14 @@ section {
       div.contents {
         width: 1000px; display: flex; flex-wrap: wrap; position: absolute; bottom: 0; justify-content: space-between; height: 350px;
         div {
-          width: 480px; height: 85px; display: flex; justify-content: space-between;
+          width: 440px; height: 85px; display: flex; justify-content: space-between;
           div.bar {
             width: 400px; height: 85px; align-items: center; display: flex; justify-content: space-around;
             p{
               margin-left: 20px; font-weight: 600; font-size: 14px;
             }
             .progress {
-              width: 210px; height: 20px; margin: 20px 10px; overflow: hidden; position: relative; border-radius: 10px; background-color: $subColor3;
+              width: 170px; height: 20px; margin: 20px 10px; overflow: hidden; position: relative; border-radius: 10px; background-color: $subColor3;
               span {
                 width: 0%; height: 100%; display: block; line-height: 20px; position: absolute; text-align: end; padding-right: 5px; background-color: $mainColor; transition: 1s;
               }
@@ -250,9 +251,9 @@ section {
               }
             }
             a {
-              border: 2px solid $mainColor; color: $mainColor; background-color: $subColor2; width: 200px; height: 55px; display: block; text-align: center; border-radius: 20px; line-height: 55px; transition: .5s; box-sizing: border-box;
+              border: 2px solid $mainColor; color: $mainColor; background-color: $subColor2; width: 150px; height: 40px; display: block; text-align: center; border-radius: 10px; line-height: 40px; transition: .5s; box-sizing: border-box; font-size: 14px;
               &:hover {
-                background-color: $mainColor; color: $subColor2; font-size: 18px; font-weight: bold;
+                background-color: $mainColor; color: $subColor2; font-size: 15px; font-weight: bold;
               }
             }
           }
