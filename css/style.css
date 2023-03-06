@@ -218,7 +218,7 @@ section#about div.inbox div.txt h2 {
   font-size: 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid #37b0e0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 section#about div.inbox div.txt p {
   line-height: 1.6;
@@ -474,4 +474,8 @@ footer address {
   font-size: 12px;
   text-align: center;
   line-height: 80px;
+}
+
+.fade1, .fade2, .fade3, .fade4, .fade5, .fade6 {
+  opacity: 0;
 }

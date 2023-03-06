@@ -74,3 +74,74 @@ $(window).scroll(function(){
   }
 
 });
+
+// gsap
+
+const fadeEls1 = document.querySelectorAll('.fade1');
+// console.log(fadeEls)
+fadeEls1.forEach( function(fadeEl, index){
+  //  gsap.to(요소, 지속시간, {옵션})
+    gsap.to(fadeEl, 1, {
+      // index를 활용하여 순차적응로 화면에 출력
+      // 0.7, 1.4, 2.1, 2.8
+      delay : (index + 1) * 0.5,
+      opacity: 1
+    });
+});
+
+$(window).scroll(function(){
+
+  let ht = $(window).height();
+  // 현재 문서가 스크롤 된 거리
+  let scroll = $(window).scrollTop();
+
+  const fadeEls2 =document.querySelectorAll('.fade2');
+  if ( scroll >= ht * 1 && scroll < ht * 2 ) {
+    fadeEls2.forEach( function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay : (index + 1) * 0.5,
+          opacity: 1
+        });
+    });
+  } else {
+    fadeEls1.opacity = 0;
+  }
+
+  const fadeEls3 =document.querySelectorAll('.fade3');
+  if ( scroll >= ht * 2 && scroll < ht * 3 ) {
+    fadeEls3.forEach( function(fadeEl){
+        gsap.to(fadeEl, 1, {
+          opacity: 1
+        });
+    });
+  }
+
+  const fadeEls4 =document.querySelectorAll('.fade4');
+  if ( scroll >= ht * 3 && scroll < ht * 4 ) {
+    fadeEls4.forEach( function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay : (index + 1) * 0.3,
+          opacity: 1
+        });
+    });
+  }
+  const fadeEls5 =document.querySelectorAll('.fade5');
+  if ( scroll >= ht * 4 && scroll < ht * 5 ) {
+    fadeEls5.forEach( function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay : (index + 1) * 0.3,
+          opacity: 1
+        });
+    });
+  }
+  const fadeEls6 =document.querySelectorAll('.fade6');
+  if ( scroll >= ht * 5 && scroll < ht * 6 ) {
+    fadeEls6.forEach( function(fadeEl, index){
+        gsap.to(fadeEl, 1, {
+          delay : (index + 1) * 0.5,
+          opacity: 1
+        });
+    });
+  }
+
+});
